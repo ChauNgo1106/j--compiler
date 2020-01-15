@@ -28,3 +28,4 @@ This code base is released under GPL-3.0+.
 
 # j---compiler
 # j--compiler
+# English-German-dictionary
