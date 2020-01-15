@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<JCompilationUnit line="1">
+  <Source fileName="/home/siyer/Dropbox/teaching/cs451_assessments/project4/tests/DoWhileStatement.java"/>
+  <Imports>
+    <Import name="java.lang.System"/>
+  </Imports>
+  <TypeDeclarations>
+    <JClassDeclaration line="3" name="DoWhileStatement" super="java.lang.Object">
+      <Modifiers>
+        <Modifier name="public"/>
+      </Modifiers>
+      <Implements>
+      </Implements>
+      <ClassBlock>
+      <JMethodDeclaration line="4" name="main" returnType="void">
+        <Modifiers>
+          <Modifier name="public"/>
+          <Modifier name="static"/>
+        </Modifiers>
+        <FormalParameters>
+          <JFormalParameter line="4" name="args" type="String[]"/>
+        </FormalParameters>
+        <Exceptions>
+        </Exceptions>
+        <Body>
+          <JBlock line="4">
+            <JVariableDeclaration>
+              <Modifiers>
+              </Modifiers>
+              <VariableDeclarators>
+                <JVariableDeclarator line="5" name="i" type="int">
+                  <Initializer>
+                    <JLiteralInt line="5" type="" value="0"/>
+                  </Initializer>
+                </JVariableDeclarator>
+                <JVariableDeclarator line="5" name="sum" type="int">
+                  <Initializer>
+                    <JLiteralInt line="5" type="" value="0"/>
+                  </Initializer>
+                </JVariableDeclarator>
+              </VariableDeclarators>
+            </JVariableDeclaration>
+            <JDoWhileStatement line="6">
+              <Body>
+                <JBlock line="6">
+                  <JStatementExpression line="7">
+                    <JBinaryExpression line="7" type="" operator="+=">
+                      <Lhs>
+                        <JVariable name="sum"/>
+                      </Lhs>
+                      <Rhs>
+                        <JUnaryExpression line="7" type="" operator="post++">
+                          <Operand>
+                            <JVariable name="i"/>
+                          </Operand>
+                        </JUnaryExpression>
+                      </Rhs>
+                    </JBinaryExpression>
+                  </JStatementExpression>
+                </JBlock>
+              </Body>
+              <TestExpression>
+                <JBinaryExpression line="8" type="" operator="&lt;=">
+                  <Lhs>
+                    <JVariable name="i"/>
+                  </Lhs>
+                  <Rhs>
+                    <JLiteralInt line="8" type="" value="10"/>
+                  </Rhs>
+                </JBinaryExpression>
+              </TestExpression>
+            </JDoWhileStatement>
+            <JStatementExpression line="9">
+              <JMessageExpression line="9" name="println">
+                <Arguments>
+                  <Argument>
+                    <JVariable name="sum"/>
+                  </Argument>
+                </Arguments>
+              </JMessageExpression>
+            </JStatementExpression>
+          </JBlock>
+        </Body>
+      </JMethodDeclaration>
+      </ClassBlock>
+    </JClassDeclaration>
+  </TypeDeclarations>
+</JCompilationUnit>

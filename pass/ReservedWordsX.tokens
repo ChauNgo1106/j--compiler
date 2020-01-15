@@ -1,0 +1,15 @@
+1	 : "case" = case
+1	 : "catch" = catch
+1	 : "do" = do
+1	 : "double" = double
+1	 : "extends" = extends
+1	 : "finally" = finally
+1	 : "for" = for
+1	 : "implements" = implements
+3	 : "interface" = interface
+3	 : "long" = long
+3	 : "switch" = switch
+3	 : "throw" = throw
+3	 : "throws" = throws
+3	 : "try" = try
+3	 : <EOF> = 

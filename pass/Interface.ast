@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<JCompilationUnit line="1">
+  <Source fileName="/home/siyer/Dropbox/teaching/cs451_assessments/project4/tests/Interface.java"/>
+  <Imports>
+  </Imports>
+  <TypeDeclarations>
+    <JInterfaceDeclaration line="1" name="A">
+      <SuperTypes>
+      </SuperTypes>
+      <Modifiers>
+      </Modifiers>
+      <InterfaceBlock>
+        <JMethodDeclaration line="2" name="f" returnType="int">
+          <Modifiers>
+            <Modifier name="public"/>
+          </Modifiers>
+          <FormalParameters>
+            <JFormalParameter line="2" name="x" type="int"/>
+          </FormalParameters>
+          <Exceptions>
+          </Exceptions>
+        </JMethodDeclaration>
+      </InterfaceBlock>
+    </JInterfaceDeclaration>
+    <JClassDeclaration line="5" name="B" super="java.lang.Object">
+      <Modifiers>
+        <Modifier name="public"/>
+      </Modifiers>
+      <Implements>
+        <Implement name="A"/>
+      </Implements>
+      <ClassBlock>
+      <JMethodDeclaration line="6" name="f" returnType="int">
+        <Modifiers>
+          <Modifier name="public"/>
+        </Modifiers>
+        <FormalParameters>
+          <JFormalParameter line="6" name="x" type="int"/>
+        </FormalParameters>
+        <Exceptions>
+        </Exceptions>
+        <Body>
+          <JBlock line="6">
+            <JReturnStatement line="7">
+              <JBinaryExpression line="7" type="" operator="*">
+                <Lhs>
+                  <JVariable name="x"/>
+                </Lhs>
+                <Rhs>
+                  <JVariable name="x"/>
+                </Rhs>
+              </JBinaryExpression>
+            </JReturnStatement>
+          </JBlock>
+        </Body>
+      </JMethodDeclaration>
+      </ClassBlock>
+    </JClassDeclaration>
+  </TypeDeclarations>
+</JCompilationUnit>

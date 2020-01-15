@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<JCompilationUnit line="1">
+  <Source fileName="/home/siyer/Dropbox/teaching/cs451_assessments/project3/tests/ExceptionHandlers.java"/>
+  <Imports>
+  </Imports>
+  <TypeDeclarations>
+    <JClassDeclaration line="1" name="ExceptionHandlers" super="java.lang.Object">
+      <Modifiers>
+        <Modifier name="public"/>
+      </Modifiers>
+      <ClassBlock>
+      <JMethodDeclaration line="2" name="f" returnType="void">
+        <Modifiers>
+          <Modifier name="private"/>
+          <Modifier name="static"/>
+        </Modifiers>
+        <FormalParameters>
+        </FormalParameters>
+        <Exceptions>
+          <Exception type="Exception1"/>
+          <Exception type="Exception2"/>
+        </Exceptions>
+        <Body>
+          <JBlock line="2">
+            <JThrowStatement line="3">
+              <JNewOp line="3" type="Exception1"/>
+                <Arguments>
+                </Arguments>
+              </JNewOp>
+            </JThrowStatement>
+          </JBlock>
+        </Body>
+      </JMethodDeclaration>
+      <JMethodDeclaration line="6" name="main" returnType="void">
+        <Modifiers>
+          <Modifier name="public"/>
+          <Modifier name="static"/>
+        </Modifiers>
+        <FormalParameters>
+          <JFormalParameter line="6" name="args" type="String[]"/>
+        </FormalParameters>
+        <Body>
+          <JBlock line="6">
+            <JTryCatchFinallyStatement line="7">
+              <TryBlock>
+                <JBlock line="7">
+                  <JStatementExpression line="8">
+                    <JMessageExpression line="8" name="f">
+                      <Arguments>
+                      </Arguments>
+                    </JMessageExpression>
+                  </JStatementExpression>
+                </JBlock>
+              </TryBlock>
+              <CatchBlock>
+                <JFormalParameter line="10" name="e1" type="Exception1"/>
+                <JBlock line="10">
+                  <JEmptyStatement line="10"/>
+                </JBlock>
+              </CatchBlock>
+              <CatchBlock>
+                <JFormalParameter line="11" name="e2" type="Exception2"/>
+                <JBlock line="11">
+                  <JEmptyStatement line="11"/>
+                </JBlock>
+              </CatchBlock>
+              <FinallyBlock>
+                <JBlock line="12">
+                  <JEmptyStatement line="12"/>
+                </JBlock>
+              </FinallyBlock>
+            </JTryCatchFinallyStatement>
+          </JBlock>
+        </Body>
+      </JMethodDeclaration>
+      </ClassBlock>
+    </JClassDeclaration>
+  </TypeDeclarations>
+</JCompilationUnit>

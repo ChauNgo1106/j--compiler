@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<JCompilationUnit line="2">
+  <Source fileName="/home/siyer/Dropbox/teaching/cs451_assessments/project4/tests/All.java"/>
+  <Imports>
+    <Import name="java.lang.Error"/>
+    <Import name="java.lang.Exception"/>
+    <Import name="java.lang.Integer"/>
+    <Import name="java.lang.System"/>
+    <Import name="java.io.IOException"/>
+  </Imports>
+  <TypeDeclarations>
+    <JClassDeclaration line="12" name="All" super="java.lang.Object">
+      <Modifiers>
+        <Modifier name="public"/>
+      </Modifiers>
+      <Implements>
+      </Implements>
+      <ClassBlock>
+      <JMethodDeclaration line="13" name="main" returnType="void">
+        <Modifiers>
+          <Modifier name="public"/>
+          <Modifier name="static"/>
+        </Modifiers>
+        <FormalParameters>
+          <JFormalParameter line="13" name="args" type="String[]"/>
+        </FormalParameters>
+        <Exceptions>
+          <Exception type="Exception1"/>
+          <Exception type="Exception2"/>
+        </Exceptions>
+        <Body>
+          <JBlock line="13">
+            <JVariableDeclaration>
+              <Modifiers>
+              </Modifiers>
+              <VariableDeclarators>
+                <JVariableDeclarator line="14" name="a" type="int">
+                  <Initializer>
+                    <JMessageExpression line="14" name="parseInt">
+                      <Arguments>
+                        <Argument>
+                          <JArrayExpression>
+                            <TheArray>
+                              <JVariable name="args"/>
+                            </TheArray>
+                            <IndexExpression>
+                              <JLiteralInt line="14" type="" value="0"/>
+                            </IndexExpression>
+                          </JArrayExpression>
+                        </Argument>
+                      </Arguments>
+                    </JMessageExpression>
+                  </Initializer>
+                </JVariableDeclarator>
+              </VariableDeclarators>
+            </JVariableDeclaration>
+            <JVariableDeclaration>
+              <Modifiers>
+              </Modifiers>
+              <VariableDeclarators>
+                <JVariableDeclarator line="15" name="i" type="int">
+                  <Initializer>
+                    <JLiteralInt line="15" type="" value="0"/>
+                  </Initializer>
+                </JVariableDeclarator>
+              </VariableDeclarators>
+            </JVariableDeclaration>
+            <JSwitchStatement line="16">
+              <TestExpression>
+                <JVariable name="a"/>
+              </TestExpression>
+              <SwitchBlockStatementGroup>
+                <CaseLabel>
+                  <JLiteralInt line="17" type="" value="0"/>
+                </CaseLabel>
+                <Body>
+                  <JForStatement line="18">
+                    <InitialExpression>
+                      <JVariableDeclaration>
+                        <Modifiers>
+                        </Modifiers>
+                        <VariableDeclarators>
+                          <JVariableDeclarator line="18" name="j" type="int">
+                            <Initializer>
+                              <JLiteralInt line="18" type="" value="0"/>
+                            </Initializer>
+                          </JVariableDeclarator>
+                        </VariableDeclarators>
+                      </JVariableDeclaration>
+                    </InitialExpression>
+                    <TestExpression>
+                      <JBinaryExpression line="18" type="" operator="&lt;">
+                        <Lhs>
+                          <JVariable name="j"/>
+                        </Lhs>
+                        <Rhs>
+                          <JLiteralInt line="18" type="" value="10"/>
+                        </Rhs>
+                      </JBinaryExpression>
+                    </TestExpression>
+                    <UpdateExpression>
+                      <JStatementExpression line="18">
+                        <JUnaryExpression line="18" type="" operator="post++">
+                          <Operand>
+                            <JVariable name="j"/>
+                          </Operand>
+                        </JUnaryExpression>
+                      </JStatementExpression>
+                    </UpdateExpression>
+                    <Statement>
+                      <JBlock line="18">
+                        <JStatementExpression line="19">
+                          <JMessageExpression line="19" name="println">
+                            <Arguments>
+                              <Argument>
+                                <JVariable name="j"/>
+                              </Argument>
+                            </Arguments>
+                          </JMessageExpression>
+                        </JStatementExpression>
+                      </JBlock>
+                    </Statement>
+                  </JForStatement>
+                </Body>
+              </SwitchBlockStatementGroup>
+              <SwitchBlockStatementGroup>
+                <CaseLabel>
+                  <JLiteralInt line="21" type="" value="1"/>
+                </CaseLabel>
+                <Body>
+                  <JForStatement line="22">
+                    <TestExpression>
+                      <JBinaryExpression line="22" type="" operator="&lt;">
+                        <Lhs>
+                          <JVariable name="i"/>
+                        </Lhs>
+                        <Rhs>
+                          <JLiteralInt line="22" type="" value="2"/>
+                        </Rhs>
+                      </JBinaryExpression>
+                    </TestExpression>
+                    <UpdateExpression>
+                      <JStatementExpression line="22">
+                        <JUnaryExpression line="22" type="" operator="post++">
+                          <Operand>
+                            <JVariable name="i"/>
+                          </Operand>
+                        </JUnaryExpression>
+                      </JStatementExpression>
+                    </UpdateExpression>
+                    <Statement>
+                      <JEmptyStatement line="22"/>
+                    </Statement>
+                  </JForStatement>
+                </Body>
+                <Body>
+                  <JBreakStatement line="23">
+                  </JBreakStatement>
+                </Body>
+              </SwitchBlockStatementGroup>
+              <SwitchBlockStatementGroup>
+                <CaseLabel>
+                  <JLiteralInt line="24" type="" value="2"/>
+                </CaseLabel>
+                <Body>
+                  <JDoWhileStatement line="25">
+                    <Body>
+                      <JBlock line="25">
+                        <JStatementExpression line="26">
+                          <JBinaryExpression line="26" type="" operator="+=">
+                            <Lhs>
+                              <JVariable name="a"/>
+                            </Lhs>
+                            <Rhs>
+                              <JLiteralInt line="26" type="" value="1"/>
+                            </Rhs>
+                          </JBinaryExpression>
+                        </JStatementExpression>
+                      </JBlock>
+                    </Body>
+                    <TestExpression>
+                      <JBinaryExpression line="27" type="" operator="&lt;">
+                        <Lhs>
+                          <JVariable name="a"/>
+                        </Lhs>
+                        <Rhs>
+                          <JLiteralInt line="27" type="" value="2"/>
+                        </Rhs>
+                      </JBinaryExpression>
+                    </TestExpression>
+                  </JDoWhileStatement>
+                </Body>
+              </SwitchBlockStatementGroup>
+              <SwitchBlockStatementGroup>
+                <CaseLabel>
+                  <JLiteralInt line="28" type="" value="3"/>
+                </CaseLabel>
+                <Body>
+                  <JTryCatchFinallyStatement line="29">
+                    <TryBlock>
+                      <JBlock line="29">
+                        <JVariableDeclaration>
+                          <Modifiers>
+                          </Modifiers>
+                          <VariableDeclarators>
+                            <JVariableDeclarator line="30" name="b" type="int">
+                              <Initializer>
+                                <JLiteralInt line="30" type="" value="5"/>
+                              </Initializer>
+                            </JVariableDeclarator>
+                          </VariableDeclarators>
+                        </JVariableDeclaration>
+                      </JBlock>
+                    </TryBlock>
+                    <FinallyBlock>
+                      <JBlock line="31">
+                        <JVariableDeclaration>
+                          <Modifiers>
+                          </Modifiers>
+                          <VariableDeclarators>
+                            <JVariableDeclarator line="32" name="b" type="int">
+                              <Initializer>
+                                <JLiteralInt line="32" type="" value="10"/>
+                              </Initializer>
+                            </JVariableDeclarator>
+                          </VariableDeclarators>
+                        </JVariableDeclaration>
+                        <JStatementExpression line="33">
+                          <JMessageExpression line="33" name="println">
+                            <Arguments>
+                              <Argument>
+                                <JVariable name="b"/>
+                              </Argument>
+                            </Arguments>
+                          </JMessageExpression>
+                        </JStatementExpression>
+                      </JBlock>
+                    </FinallyBlock>
+                  </JTryCatchFinallyStatement>
+                </Body>
+              </SwitchBlockStatementGroup>
+              <SwitchBlockStatementGroup>
+                <CaseLabel>
+                  <JLiteralInt line="35" type="" value="4"/>
+                </CaseLabel>
+                <Body>
+                  <JTryCatchFinallyStatement line="36">
+                    <TryBlock>
+                      <JBlock line="36">
+                        <JVariableDeclaration>
+                          <Modifiers>
+                          </Modifiers>
+                          <VariableDeclarators>
+                            <JVariableDeclarator line="37" name="b" type="int">
+                              <Initializer>
+                                <JLiteralInt line="37" type="" value="5"/>
+                              </Initializer>
+                            </JVariableDeclarator>
+                          </VariableDeclarators>
+                        </JVariableDeclaration>
+                      </JBlock>
+                    </TryBlock>
+                    <CatchBlock>
+                      <JFormalParameter line="38" name="e" type="Error"/>
+                      <JBlock line="38">
+                        <JVariableDeclaration>
+                          <Modifiers>
+                          </Modifiers>
+                          <VariableDeclarators>
+                            <JVariableDeclarator line="39" name="b" type="int">
+                              <Initializer>
+                                <JLiteralInt line="39" type="" value="10"/>
+                              </Initializer>
+                            </JVariableDeclarator>
+                          </VariableDeclarators>
+                        </JVariableDeclaration>
+                      </JBlock>
+                    </CatchBlock>
+                  </JTryCatchFinallyStatement>
+                </Body>
+              </SwitchBlockStatementGroup>
+              <SwitchBlockStatementGroup>
+                <CaseLabel>
+                  <JLiteralInt line="41" type="" value="5"/>
+                </CaseLabel>
+                <Body>
+                  <JTryCatchFinallyStatement line="42">
+                    <TryBlock>
+                      <JBlock line="42">
+                        <JVariableDeclaration>
+                          <Modifiers>
+                          </Modifiers>
+                          <VariableDeclarators>
+                            <JVariableDeclarator line="43" name="b" type="int">
+                              <Initializer>
+                                <JLiteralInt line="43" type="" value="5"/>
+                              </Initializer>
+                            </JVariableDeclarator>
+                          </VariableDeclarators>
+                        </JVariableDeclaration>
+                      </JBlock>
+                    </TryBlock>
+                    <CatchBlock>
+                      <JFormalParameter line="44" name="e" type="IOException"/>
+                      <JBlock line="44">
+                        <JVariableDeclaration>
+                          <Modifiers>
+                          </Modifiers>
+                          <VariableDeclarators>
+                            <JVariableDeclarator line="45" name="b" type="int">
+                              <Initializer>
+                                <JLiteralInt line="45" type="" value="10"/>
+                              </Initializer>
+                            </JVariableDeclarator>
+                          </VariableDeclarators>
+                        </JVariableDeclaration>
+                      </JBlock>
+                    </CatchBlock>
+                    <CatchBlock>
+                      <JFormalParameter line="46" name="e" type="Error"/>
+                      <JBlock line="46">
+                        <JVariableDeclaration>
+                          <Modifiers>
+                          </Modifiers>
+                          <VariableDeclarators>
+                            <JVariableDeclarator line="47" name="b" type="int">
+                              <Initializer>
+                                <JLiteralInt line="47" type="" value="15"/>
+                              </Initializer>
+                            </JVariableDeclarator>
+                          </VariableDeclarators>
+                        </JVariableDeclaration>
+                      </JBlock>
+                    </CatchBlock>
+                  </JTryCatchFinallyStatement>
+                </Body>
+                <Body>
+                  <JStatementExpression line="49">
+                    <JBinaryExpression line="49" type="" operator="^=">
+                      <Lhs>
+                        <JVariable name="a"/>
+                      </Lhs>
+                      <Rhs>
+                        <JVariable name="i"/>
+                      </Rhs>
+                    </JBinaryExpression>
+                  </JStatementExpression>
+                </Body>
+              </SwitchBlockStatementGroup>
+              <SwitchBlockStatementGroup>
+                <CaseLabel>
+                  <JLiteralInt line="50" type="" value="6"/>
+                </CaseLabel>
+                <Body>
+                  <JTryCatchFinallyStatement line="51">
+                    <TryBlock>
+                      <JBlock line="51">
+                        <JVariableDeclaration>
+                          <Modifiers>
+                          </Modifiers>
+                          <VariableDeclarators>
+                            <JVariableDeclarator line="52" name="b" type="int">
+                              <Initializer>
+                                <JLiteralInt line="52" type="" value="5"/>
+                              </Initializer>
+                            </JVariableDeclarator>
+                          </VariableDeclarators>
+                        </JVariableDeclaration>
+                      </JBlock>
+                    </TryBlock>
+                    <CatchBlock>
+                      <JFormalParameter line="53" name="e" type="Error"/>
+                      <JBlock line="53">
+                        <JVariableDeclaration>
+                          <Modifiers>
+                          </Modifiers>
+                          <VariableDeclarators>
+                            <JVariableDeclarator line="54" name="b" type="int">
+                              <Initializer>
+                                <JLiteralInt line="54" type="" value="10"/>
+                              </Initializer>
+                            </JVariableDeclarator>
+                          </VariableDeclarators>
+                        </JVariableDeclaration>
+                      </JBlock>
+                    </CatchBlock>
+                    <FinallyBlock>
+                      <JBlock line="55">
+                        <JVariableDeclaration>
+                          <Modifiers>
+                          </Modifiers>
+                          <VariableDeclarators>
+                            <JVariableDeclarator line="56" name="b" type="int">
+                              <Initializer>
+                                <JLiteralInt line="56" type="" value="15"/>
+                              </Initializer>
+                            </JVariableDeclarator>
+                          </VariableDeclarators>
+                        </JVariableDeclaration>
+                        <JStatementExpression line="57">
+                          <JMessageExpression line="57" name="println">
+                            <Arguments>
+                              <Argument>
+                                <JVariable name="b"/>
+                              </Argument>
+                            </Arguments>
+                          </JMessageExpression>
+                        </JStatementExpression>
+                      </JBlock>
+                    </FinallyBlock>
+                  </JTryCatchFinallyStatement>
+                </Body>
+                <Body>
+                  <JStatementExpression line="59">
+                    <JBinaryExpression line="59" type="" operator="/=">
+                      <Lhs>
+                        <JVariable name="a"/>
+                      </Lhs>
+                      <Rhs>
+                        <JVariable name="i"/>
+                      </Rhs>
+                    </JBinaryExpression>
+                  </JStatementExpression>
+                </Body>
+                <Body>
+                  <JBreakStatement line="60">
+                  </JBreakStatement>
+                </Body>
+              </SwitchBlockStatementGroup>
+              <SwitchBlockStatementGroup>
+                <CaseLabel>
+                  <JLiteralInt line="61" type="" value="7"/>
+                </CaseLabel>
+                <Body>
+                  <JVariableDeclaration>
+                    <Modifiers>
+                    </Modifiers>
+                    <VariableDeclarators>
+                      <JVariableDeclarator line="62" name="x" type="long">
+                        <Initializer>
+                          <JLiteralLong line="62" type="" value="12L"/>
+                        </Initializer>
+                      </JVariableDeclarator>
+                    </VariableDeclarators>
+                  </JVariableDeclaration>
+                </Body>
+                <Body>
+                  <JVariableDeclaration>
+                    <Modifiers>
+                    </Modifiers>
+                    <VariableDeclarators>
+                      <JVariableDeclarator line="63" name="y" type="double">
+                        <Initializer>
+                          <JLiteralDouble line="63" type="" value="12.2"/>
+                        </Initializer>
+                      </JVariableDeclarator>
+                    </VariableDeclarators>
+                  </JVariableDeclaration>
+                </Body>
+              </SwitchBlockStatementGroup>
+              <SwitchBlockStatementGroup>
+                <CaseLabel>
+                  <JLiteralInt line="64" type="" value="8"/>
+                </CaseLabel>
+                <Body>
+                  <JVariableDeclaration>
+                    <Modifiers>
+                    </Modifiers>
+                    <VariableDeclarators>
+                      <JVariableDeclarator line="65" name="j" type="int">
+                        <Initializer>
+                          <JLiteralInt line="65" type="" value="0"/>
+                        </Initializer>
+                      </JVariableDeclarator>
+                    </VariableDeclarators>
+                  </JVariableDeclaration>
+                </Body>
+                <Body>
+                  <JSwitchStatement line="66">
+                    <TestExpression>
+                      <JVariable name="j"/>
+                    </TestExpression>
+                    <SwitchBlockStatementGroup>
+                      <CaseLabel>
+                        <JLiteralInt line="67" type="" value="0"/>
+                      </CaseLabel>
+                      <CaseLabel>
+                        <JLiteralInt line="67" type="" value="1"/>
+                      </CaseLabel>
+                      <CaseLabel>
+                        <JLiteralInt line="67" type="" value="2"/>
+                      </CaseLabel>
+                      <CaseLabel>
+                        <JLiteralInt line="67" type="" value="3"/>
+                      </CaseLabel>
+                      <CaseLabel>
+                        <JLiteralInt line="68" type="" value="4"/>
+                      </CaseLabel>
+                      <CaseLabel>
+                        <JLiteralInt line="68" type="" value="5"/>
+                      </CaseLabel>
+                      <DefaultLabel/>
+                      <Body>
+                        <JStatementExpression line="70">
+                          <JMessageExpression line="70" name="println">
+                            <Arguments>
+                              <Argument>
+                                <JVariable name="j"/>
+                              </Argument>
+                            </Arguments>
+                          </JMessageExpression>
+                        </JStatementExpression>
+                      </Body>
+                    </SwitchBlockStatementGroup>
+                  </JSwitchStatement>
+                </Body>
+                <Body>
+                  <JBreakStatement line="72">
+                  </JBreakStatement>
+                </Body>
+              </SwitchBlockStatementGroup>
+              <SwitchBlockStatementGroup>
+                <CaseLabel>
+                  <JLiteralInt line="73" type="" value="9"/>
+                </CaseLabel>
+                <Body>
+                  <JStatementExpression line="74">
+                    <JUnaryExpression line="74" type="" operator="--pre">
+                      <Operand>
+                        <JVariable name="a"/>
+                      </Operand>
+                    </JUnaryExpression>
+                  </JStatementExpression>
+                </Body>
+                <Body>
+                  <JStatementExpression line="75">
+                    <JUnaryExpression line="75" type="" operator="post++">
+                      <Operand>
+                        <JVariable name="a"/>
+                      </Operand>
+                    </JUnaryExpression>
+                  </JStatementExpression>
+                </Body>
+                <Body>
+                  <JStatementExpression line="76">
+                    <JBinaryExpression line="76" type="" operator="+=">
+                      <Lhs>
+                        <JVariable name="a"/>
+                      </Lhs>
+                      <Rhs>
+                        <JConditionalExpression line="76" type="" operator="?">
+                          <TestExpression>
+                            <JBinaryExpression line="76" type="" operator="&gt;=">
+                              <Lhs>
+                                <JVariable name="a"/>
+                              </Lhs>
+                              <Rhs>
+                                <JLiteralInt line="76" type="" value="1"/>
+                              </Rhs>
+                            </JBinaryExpression>
+                          </TestExpression>
+                          <TrueClause>
+                            <JLiteralInt line="76" type="" value="100"/>
+                          </TrueClause>
+                          <FalseClause>
+                            <JLiteralInt line="76" type="" value="0"/>
+                          </FalseClause>
+                        </JConditionalExpression>
+                      </Rhs>
+                    </JBinaryExpression>
+                  </JStatementExpression>
+                </Body>
+              </SwitchBlockStatementGroup>
+              <SwitchBlockStatementGroup>
+                <DefaultLabel/>
+                <Body>
+                  <JThrowStatement line="78">
+                    <JNewOp line="78" type="Exception1"/>
+                      <Arguments>
+                        <Argument>
+                          <JLiteralString line="78" type="" value="&quot;None&quot;"/>
+                        </Argument>
+                      </Arguments>
+                    </JNewOp>
+                  </JThrowStatement>
+                </Body>
+              </SwitchBlockStatementGroup>
+            </JSwitchStatement>
+          </JBlock>
+        </Body>
+      </JMethodDeclaration>
+      </ClassBlock>
+    </JClassDeclaration>
+  </TypeDeclarations>
+</JCompilationUnit>

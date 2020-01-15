@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<JCompilationUnit line="1">
+  <Source fileName="/home/siyer/Dropbox/teaching/cs451_assessments/project4/tests/ConditionalExpression.java"/>
+  <Imports>
+    <Import name="java.lang.Integer"/>
+    <Import name="java.lang.System"/>
+  </Imports>
+  <TypeDeclarations>
+    <JClassDeclaration line="4" name="ConditionalExpression" super="java.lang.Object">
+      <Modifiers>
+        <Modifier name="public"/>
+      </Modifiers>
+      <Implements>
+      </Implements>
+      <ClassBlock>
+      <JMethodDeclaration line="5" name="main" returnType="void">
+        <Modifiers>
+          <Modifier name="public"/>
+          <Modifier name="static"/>
+        </Modifiers>
+        <FormalParameters>
+          <JFormalParameter line="5" name="args" type="String[]"/>
+        </FormalParameters>
+        <Exceptions>
+        </Exceptions>
+        <Body>
+          <JBlock line="5">
+            <JVariableDeclaration>
+              <Modifiers>
+              </Modifiers>
+              <VariableDeclarators>
+                <JVariableDeclarator line="6" name="x" type="int">
+                  <Initializer>
+                    <JMessageExpression line="6" name="parseInt">
+                      <Arguments>
+                        <Argument>
+                          <JArrayExpression>
+                            <TheArray>
+                              <JVariable name="args"/>
+                            </TheArray>
+                            <IndexExpression>
+                              <JLiteralInt line="6" type="" value="0"/>
+                            </IndexExpression>
+                          </JArrayExpression>
+                        </Argument>
+                      </Arguments>
+                    </JMessageExpression>
+                  </Initializer>
+                </JVariableDeclarator>
+              </VariableDeclarators>
+            </JVariableDeclaration>
+            <JStatementExpression line="7">
+              <JMessageExpression line="7" name="println">
+                <Arguments>
+                  <Argument>
+                    <JConditionalExpression line="7" type="" operator="?">
+                      <TestExpression>
+                        <JBinaryExpression line="7" type="" operator="==">
+                          <Lhs>
+                            <JBinaryExpression line="7" type="" operator="%">
+                              <Lhs>
+                                <JVariable name="x"/>
+                              </Lhs>
+                              <Rhs>
+                                <JLiteralInt line="7" type="" value="2"/>
+                              </Rhs>
+                            </JBinaryExpression>
+                          </Lhs>
+                          <Rhs>
+                            <JLiteralInt line="7" type="" value="0"/>
+                          </Rhs>
+                        </JBinaryExpression>
+                      </TestExpression>
+                      <TrueClause>
+                        <JLiteralString line="7" type="" value="&quot;even&quot;"/>
+                      </TrueClause>
+                      <FalseClause>
+                        <JLiteralString line="7" type="" value="&quot;odd&quot;"/>
+                      </FalseClause>
+                    </JConditionalExpression>
+                  </Argument>
+                </Arguments>
+              </JMessageExpression>
+            </JStatementExpression>
+          </JBlock>
+        </Body>
+      </JMethodDeclaration>
+      </ClassBlock>
+    </JClassDeclaration>
+  </TypeDeclarations>
+</JCompilationUnit>

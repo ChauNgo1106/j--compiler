@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<JCompilationUnit line="1">
+  <Source fileName="/home/siyer/Dropbox/teaching/cs451_assessments/project4/tests/SwitchStatement.java"/>
+  <Imports>
+    <Import name="java.lang.Integer"/>
+    <Import name="java.lang.System"/>
+  </Imports>
+  <TypeDeclarations>
+    <JClassDeclaration line="4" name="SwitchStatement" super="java.lang.Object">
+      <Modifiers>
+        <Modifier name="public"/>
+      </Modifiers>
+      <Implements>
+      </Implements>
+      <ClassBlock>
+      <JMethodDeclaration line="5" name="main" returnType="void">
+        <Modifiers>
+          <Modifier name="public"/>
+          <Modifier name="static"/>
+        </Modifiers>
+        <FormalParameters>
+          <JFormalParameter line="5" name="args" type="String[]"/>
+        </FormalParameters>
+        <Exceptions>
+        </Exceptions>
+        <Body>
+          <JBlock line="5">
+            <JSwitchStatement line="6">
+              <TestExpression>
+                <JMessageExpression line="6" name="parseInt">
+                  <Arguments>
+                    <Argument>
+                      <JArrayExpression>
+                        <TheArray>
+                          <JVariable name="args"/>
+                        </TheArray>
+                        <IndexExpression>
+                          <JLiteralInt line="6" type="" value="0"/>
+                        </IndexExpression>
+                      </JArrayExpression>
+                    </Argument>
+                  </Arguments>
+                </JMessageExpression>
+              </TestExpression>
+              <SwitchBlockStatementGroup>
+                <CaseLabel>
+                  <JLiteralInt line="7" type="" value="1"/>
+                </CaseLabel>
+                <CaseLabel>
+                  <JLiteralInt line="8" type="" value="2"/>
+                </CaseLabel>
+                <CaseLabel>
+                  <JLiteralInt line="9" type="" value="3"/>
+                </CaseLabel>
+                <CaseLabel>
+                  <JLiteralInt line="10" type="" value="4"/>
+                </CaseLabel>
+                <CaseLabel>
+                  <JLiteralInt line="11" type="" value="5"/>
+                </CaseLabel>
+                <Body>
+                  <JStatementExpression line="12">
+                    <JMessageExpression line="12" name="println">
+                      <Arguments>
+                        <Argument>
+                          <JLiteralString line="12" type="" value="&quot;Spring&quot;"/>
+                        </Argument>
+                      </Arguments>
+                    </JMessageExpression>
+                  </JStatementExpression>
+                </Body>
+                <Body>
+                  <JBreakStatement line="13">
+                  </JBreakStatement>
+                </Body>
+              </SwitchBlockStatementGroup>
+              <SwitchBlockStatementGroup>
+                <CaseLabel>
+                  <JLiteralInt line="14" type="" value="6"/>
+                </CaseLabel>
+                <CaseLabel>
+                  <JLiteralInt line="15" type="" value="7"/>
+                </CaseLabel>
+                <CaseLabel>
+                  <JLiteralInt line="16" type="" value="8"/>
+                </CaseLabel>
+                <Body>
+                  <JStatementExpression line="17">
+                    <JMessageExpression line="17" name="println">
+                      <Arguments>
+                        <Argument>
+                          <JLiteralString line="17" type="" value="&quot;Summer&quot;"/>
+                        </Argument>
+                      </Arguments>
+                    </JMessageExpression>
+                  </JStatementExpression>
+                </Body>
+                <Body>
+                  <JBreakStatement line="18">
+                  </JBreakStatement>
+                </Body>
+              </SwitchBlockStatementGroup>
+              <SwitchBlockStatementGroup>
+                <CaseLabel>
+                  <JLiteralInt line="19" type="" value="9"/>
+                </CaseLabel>
+                <CaseLabel>
+                  <JLiteralInt line="20" type="" value="10"/>
+                </CaseLabel>
+                <CaseLabel>
+                  <JLiteralInt line="21" type="" value="11"/>
+                </CaseLabel>
+                <CaseLabel>
+                  <JLiteralInt line="22" type="" value="12"/>
+                </CaseLabel>
+                <Body>
+                  <JStatementExpression line="23">
+                    <JMessageExpression line="23" name="println">
+                      <Arguments>
+                        <Argument>
+                          <JLiteralString line="23" type="" value="&quot;Fall&quot;"/>
+                        </Argument>
+                      </Arguments>
+                    </JMessageExpression>
+                  </JStatementExpression>
+                </Body>
+                <Body>
+                  <JBreakStatement line="24">
+                  </JBreakStatement>
+                </Body>
+              </SwitchBlockStatementGroup>
+              <SwitchBlockStatementGroup>
+                <DefaultLabel/>
+                <Body>
+                  <JStatementExpression line="26">
+                    <JMessageExpression line="26" name="println">
+                      <Arguments>
+                        <Argument>
+                          <JLiteralString line="26" type="" value="&quot;Error!&quot;"/>
+                        </Argument>
+                      </Arguments>
+                    </JMessageExpression>
+                  </JStatementExpression>
+                </Body>
+              </SwitchBlockStatementGroup>
+            </JSwitchStatement>
+          </JBlock>
+        </Body>
+      </JMethodDeclaration>
+      </ClassBlock>
+    </JClassDeclaration>
+  </TypeDeclarations>
+</JCompilationUnit>
