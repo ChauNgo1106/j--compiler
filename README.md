@@ -1,6 +1,6 @@
 # Overview
 
-This repository contains the most up-to-date _j--_ base compiler and
+This repository contains the most up-to-date j-- compiler and
 additional information for the textbook, _Introduction to Compiler
 Construction in a Java World_ by Bill Campbell, Swami Iyer, and 
 Bahar Akbal-Deliba&#351;, which is a non-trivial subset of the Java&trade;
@@ -25,7 +25,3 @@ Copyright &copy; 2019 Bill Campbell, Swami Iyer, and Bahar Akbal-Deliba&#351;
 ## License
 
 This code base is released under GPL-3.0+.
-
-# j---compiler
-# j--compiler
-# English-German-dictionary
